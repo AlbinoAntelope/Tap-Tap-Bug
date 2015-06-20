@@ -1,0 +1,94 @@
+body {
+	text-align:center;
+    background-color: #3399FF;
+    color: #ffffff;
+    margin: auto;
+}
+
+.gameScreen{
+	margin: auto;
+	width: 420px;
+}
+
+.startScreen{
+	display: inline-block
+	position: relative;
+	-webkit-transform: translateY(50%);
+  	-ms-transform: translateY(50%);
+  	transform: translateY(50%);
+}
+
+.gameOver{
+	display: inline-block
+	position: relative;
+  	margin: auto;
+
+	-webkit-transform: translateY(50%);
+  	-ms-transform: translateY(50%);
+  	transform: translateY(50%);
+}
+#infoBar{
+	margin: auto;
+	width: 400px;
+	height:30px;
+	border:1px solid #3333CC;
+}
+button{
+	margin: auto;
+	margin-top: 5px;
+}
+#score {
+    float: right;
+    margin: 5px;
+}
+#timer {
+    float: left;
+    margin: 5px;
+}
+
+canvas {
+	background-color: #ffffff;
+	margin: auto;
+	border:1px solid #3333CC;
+}
+
+p {
+    font-family: "Arial";
+    font-size: 20px;
+}
+
+.diff1{
+	float: left;
+}
+.diff2{
+	float: right;
+}
+
+#levelSelect{
+	margin: auto;
+	width: 80%;
+}
+.screensOnly{
+	display: none;
+}
+
+@media only screen and (min-width: 981px) {
+	#levelSelect{
+		width: 400px;
+	}
+	.screensOnly{
+		display: inline-block;
+		position: absolute;
+		top: 0px;
+		width: calc(50% - 250px);
+		height: 100%;
+	}
+	#leftSide{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	#rightSide{
+		right: 0px;
+	}
+}

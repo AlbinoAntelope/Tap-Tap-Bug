@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ 	<link rel="stylesheet" type="text/css" href="a2.css">
+	<meta charset="UTF-8">
+	<title>Tap-Tap Bug</title>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+	<script type="text/javascript" src="a2.js"></script>
+</head>
+
+<body>
+	<form class="startScreen">
+		<div id="levelSelect">
+			<input class="diff1" id="radio1" type="radio" name="level" value=1 checked=true>
+			<p class="diff1">1</p>
+			<input class="diff2" id="radio2" type="radio" name="level" value=2>
+			<p class="diff2">2</p><br>
+		</div>
+		<button id="startButton" type="button">Start</button>
+		<p class="scoreDisplay" id="startHiScore">High Score: 0</p>
+	</form>
+
+	<div class="gameScreen">
+		<div id="infoBar">
+			<p id="timer"></p>
+			<button id = "pauseButton">(||)</button>
+			<p class="scoreDisplay" id="score"></p>
+		</div>
+		<canvas id="myCanvas" width="400" height="600"></canvas>
+		<button id="quitButton" type="button">Quit</button>
+	</div>
+
+	<div class="gameOver">
+		<p id="gameOverText">Game Over</p>
+		<p class="scoreDisplay" id="gameOverScore">Score: 0</p>
+		<p class="scoreDisplay" id="gameOverHiScore">High Score: 0</p>
+		<p id="gameOverPrompt">Play Again?</p>
+		<button id = "retry">retry</button>
+		<button id = "quit">quit</button>
+	</div>
+
+	<div hidden=true>
+		<img id="food" src="food.png" alt="food" width="20" height="20">
+
+		<img id="Black" src="bla.png" alt="blackBug" width="10" height="40">
+		<img id="Orange" src="ora.png" alt="orangeBug" width="10" height="40">
+		<img id="Red" src="red.png" alt="redBug" width="10" height="40">
+
+		<img id="BlackReverse" src="blaF.png" alt="blackBug" width="10" height="40">
+		<img id="OrangeReverse" src="oraF.png" alt="orangeBug" width="10" height="40">
+		<img id="RedReverse" src="redF.png" alt="redBug" width="10" height="40">
+
+	</div>
+		<img class="screensOnly" id="leftSide" src="left_side.jpg" alt="left">
+		<img class="screensOnly" id="rightSide" src="right_side.jpg" alt="right">
+</body>
+
+</html>
